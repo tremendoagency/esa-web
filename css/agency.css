@@ -23,7 +23,7 @@
 html, body {
   position: relative;
   height: 100%;
-  color: #000011;
+  color: #010101;
   font-family: 'GT Walsheim Pro Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -32,11 +32,11 @@ p {
 }
 
 a {
-  color: #000011;
+  color: #010101;
 }
 
 a:hover {
-  color: #000011;
+  color: #010101;
 }
 
 .text-primary {
@@ -54,20 +54,12 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.25;
-  font-family: 'GT Walsheim Pro Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  line-height: 1;
+  font-family: 'GT Walsheim Pro Light', 'Helvetica Neue', Arial, sans-serif;
 }
 h1{
   font-size: 3rem;
-  font-family: 'KonstantGrotesk';
-}
-.bring-front{
-  position: relative;
-  z-index: 3;
-}
-.gradient{
-  background: rgb(87,18,221);
-  background: linear-gradient(0deg, rgba(87,18,221,1) 30%, rgba(251,180,0,1) 100%);
+  font-family: 'KonstantGrotesk', 'Helvetica Neue', Arial, sans-serif;
 }
 .parallax {
   perspective: 1px;
@@ -84,41 +76,14 @@ h1{
   transition: all 1200ms ease-out;
   z-index: 1;
 }
-.square-1 {
-  width: 600px;
-  height: 600px;
-  top: 0px;
-  right: 0px;
-}
-.square-2 {
-  width: 600px;
-  height: 600px;
-  top: 0px;
-  left: 0px;
-  border-radius: 50%;
-  z-index: 2 !important;
-}
 .page-section {
   position: relative;
   min-height: 100%;
   padding: 15% 0;
 }
-
-.page-section h2.section-heading {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
+section{
+  overflow: hidden;
 }
-
-.page-section h3.section-subheading {
-  font-size: 16px;
-  font-weight: 400;
-  font-style: italic;
-  margin-bottom: 75px;
-  text-transform: none;
-  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
 @media (min-width: 768px) {
   section {
     padding: 150px 0;
@@ -126,12 +91,14 @@ h1{
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #010101;
+  color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #010101;
+  color: #fff;
   text-shadow: none;
 }
 
@@ -174,7 +141,8 @@ img::-moz-selection {
 
 #mainNav {
   background-color: #fff;
-  padding: 1rem 2rem;
+  padding: 1.5% 3% !important;
+  transition: all 0.3s;
 }
 
 #mainNav .navbar-toggler {
@@ -182,7 +150,7 @@ img::-moz-selection {
   right: 0;
   padding: 0;
   text-transform: uppercase;
-  color: #000011;
+  color: #010101;
   border: 0;
   background-color: transparent;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -195,9 +163,14 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   width: 160px;
-  color: #000011;
-  margin: 0 !important;
+  color: #010101;
   font-family: "KonstantGrotesk";
+  transition: all 0.3s;
+  padding: 0.75rem 0 0.375rem !important;
+  margin: 0 !important;
+}
+body.home #mainNav .navbar-brand{
+  opacity: 0;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -213,33 +186,28 @@ img::-moz-selection {
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
-  color: #000011;
+  color: #010101;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
 }
-#mainNav.navbar-shrink{
-  background-color: #fff;
-}
-#mainNav.navbar-shrink .navbar-brand {
+#mainNav.navbar-shrink .navbar-brand, body.home #mainNav.navbar-shrink .navbar-brand {
   opacity: 1;
-  font-size: 1.25em;
-  padding: 12px 0;
 }
 
 @media (min-width: 992px) {
+  .pt-5, .py-5 {
+    padding-top: 5rem!important;
+  }
   h1{
     font-size: 4.5rem;
   }
   #mainNav {
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-    border: none;
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    font-size: 1.75em;
-    transition: all 0.3s;
+    font-size: 1.5em;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
@@ -255,17 +223,22 @@ img::-moz-selection {
   z-index: 1020;
   top: 0;
   left: 0;
-  background-color: #000011;
+  background-color: #fff;
   opacity: 0;
   pointer-events: none;
-  transition: all 660ms ease-in;
+  transition: all 600ms ease;
 }
 .mobile-navbar.show{
   opacity: 1;
   pointer-events: auto;
 }
+.mobile-navbar .inner{
+  margin: 3%;
+}
 .mobile-navbar a{
-  font-size: 36px;
+  font-family: 'KonstantGrotesk', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.2;
+  font-size: 3rem;
   transform: translateY(25%);
   opacity: 0;
   transition: all 660ms ease-in-out;
@@ -306,7 +279,7 @@ img::-moz-selection {
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #000011;
+  background: #010101;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -342,26 +315,46 @@ img::-moz-selection {
   transform: rotate(-45deg);
 }
 
+/* SideBar */
+
+.sidebar{
+  position: fixed;
+  bottom: 3%;
+  right: -2%;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  z-index: 1021;
+}
+.section-num{
+  left: 3%;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  z-index: 1;
+}
+
 /* Header */
 
-header#home{
-  background-image: url(../img/home.jpg);
-}
-header {
-  text-align: center;
-  color: white;
+.cover {
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-position: center center;
   background-size: cover;
   background-color: #000000;
 }
 
-header h1 {
-  font-size:11.25rem;
+.cover .inner {
   text-align: left;
-  margin: 0;
-  margin-left: -0.4rem;
+  padding: 3%;
+  opacity: 1;
+}
+.cover .inner .h1{
+  font-family: 'KonstantGrotesk';
+  line-height: 0.6;
+  font-size: 11.25rem;
+  margin: 0 !important;
+  margin-left: -0.5rem !important;
+}
+.cover.cover-shrink .inner{
+  opacity: 0 !important;
 }
 
 header .intro-text .intro-heading.heading-shrink {
@@ -395,7 +388,7 @@ header .intro-text .intro-heading.heading-shrink {
 }
 
 .bg-dark{
-  background-color: #000011 !important;
+  background-color: #010101 !important;
 }
 
 #portfolio{

@@ -13,344 +13,150 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
 
 </head>
 
-<body id="page-top">
+<body class="home" id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-dark fixed-top" id="mainNav">
-    <div class="container justify-content-between">
-      <a class="navbar-brand js-scroll-trigger" href="index.html">Esa</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button">
-        <span></span>
-        <span></span>
-      </button>
-    </div>
+  <nav class="navbar fixed-top justify-content-between" id="mainNav">
+    <a class="navbar-brand js-scroll-trigger" href="index.html">Esa</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button">
+      <span></span>
+      <span></span>
+    </button>
   </div>
   </nav>
-  <div class="mobile-navbar h-100 d-flex align-items-center justify-content-center text-center">
-    <div>
-      <a class="d-block text-white js-scroll-trigger" href="#home">Home</a>
-      <a class="d-block text-white js-scroll-trigger" href="#myvibe">My Vibe</a>
-      <a class="d-block text-white js-scroll-trigger" href="#myjourney">My Journey</a>
-      <a class="d-block text-white js-scroll-trigger" href="#myprojects">My Projects</a>
+  <div class="mobile-navbar h-100 d-flex align-items-end">
+    <div class="inner">
+      <a class="d-block" href="index.html">Home</a>
+      <a class="d-block" href="page-bio.html">Bio</a>
+      <a class="d-block" href="page-archive.html">Journal</a>
+      <a class="d-block" href="page-projects.html">Projects</a>
+      <a class="d-block" href="mailto:thomas@thepool-london.com">Booking</a>
     </div>
   </div>
 
+  <div class="sidebar">
+    <a href="https://www.instagram.com/esawilliams/" target="_blank">IG</a> — 
+    <a href="https://soundcloud.com/esawilliams" target="_blank">SC</a> — 
+    <a href="https://www.facebook.com/esawilliams.music/" target="_blank">FB</a>
+  </div>
+
+
   <!-- Header -->
-  <header class="h-100 d-flex align-items-end" id="home">
-    <div class="container">
-      <div class="row">
-        <h1 class="mb-5">Esa</h1>
+  <header class="h-100" id="home">
+    <div class="row no-gutters h-100">
+      <div class="col-md-11 cover h-100 d-flex align-items-end" style="background-image: url(img/home.jpg);">
+        <div class="inner" data-aos="fade-left" data-aos-duration="600">
+          <span class="h1">Esa</span><br/>
+          DJ | Producer | Curator
+        </div>
       </div>
     </div>
   </header>
 
   <!-- My Vibe -->
   <section class="page-section" id="myvibe">
-    <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col-md-8">
-          <img class="img-fluid" src="img/home02.jpg" data-rellax-speed="1"/>
-        </div>
-        <div class="col-md-5 offset-md-6 position-absolute">
-          <h1>My Vibe</h1>
-          <a href="page-archive.html">Follow my Journey →</a>
-        </div>
+    <div class="row d-flex align-items-center no-gutters">
+      <div class="col-md-1 d-flex justify-content-center">
+        <h3 class="section-num text-muted">01</h3>
       </div>
-      <div class="row pt-5 d-flex align-items-center">
-        <div class="col-md-6">
-          <h3 class="mb-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br/>
-            Sed vitae erat mauris. Morbi vitae dui mauris.
-          </h3>
-          <a class="mt-3" href="page-archive.html">Follow my Journey →</a>
-        </div>
-        <div class="col-md-6">
-          <img class="img-fluid" src="img/home03.jpg" data-rellax-speed="0.5"/>
-        </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-duration="300">
+        <h1>Bio</h1>
+        <h3 class="mb-4">
+          A producer, DJ and curator, London-based South African Esa Williams is a true musical polymath.
+        </h3>
+        <a href="page-bio.html">Read More →</a>
+      </div>
+      <div class="col-md-6 offset-1" data-aos="fade-left" data-aos-duration="600">
+        <img class="img-fluid" src="img/home02.jpg" data-rellax-speed="3"/>
       </div>
     </div>
   </section>
 
   <!-- My Journey -->
   <section class="bg-dark" id="myjourney">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-white">Where I come from, continuing the journey</h1>
-          <a href="#">Get to know me →</a>
+    <div class="row text-white no-gutters">
+      <div class="col-md-1 d-flex align-items-center justify-content-center">
+        <h3 class="section-num text-muted">02</h3>
+      </div>
+      <div class="col-5 pt-5">
+        <div class="row pt-5" data-aos="fade-right" data-aos-duration="600">
+          <div class="col">
+            <h3 class="mb-4">
+              "I remember going to a bar. I told the guy, listen, I don’t have demos but I can give you a live demo. I took the bongo drum in, some records and started mixing."
+            </h3>
+            <a class="text-white" href="page-archive.html">Follow my journey →</a>
+          </div>
+        </div>
+        <div class="row pt-5" data-aos="fade-up" data-aos-duration="600">
+          <div class="col-md-9">
+            <img class="img-fluid" src="img/home07.jpg" data-rellax-speed="0.5"/>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row pt-5">
-        <div class="col-12">
-          <img class="img-fluid" src="img/home04.jpg" data-rellax-speed="0.5"/>
+      <div class="col-5">
+        <div class="row pb-5" data-aos="fade-up" data-aos-duration="600">
+          <div class="col-md-9 offset-3">
+            <img class="img-fluid" src="img/home08.jpg" data-rellax-speed="2"/>
+          </div>
         </div>
-      </div>  
+        <div class="row pt-3" data-aos="fade-left" data-aos-duration="600">
+          <div class="col-md-11">
+            <h1>Journal</h1>
+            <h3 class="mb-4">
+              Daily inspiration, news & new discoveries…
+            </h3>
+            <a class="text-white" href="page-archive.html">Read More →</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- My Projects -->
   <section id="myprojects">
-    <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col-md-5 offset-md-1">
-          <img class="img-fluid" src="img/home05.jpg" data-rellax-speed="1"/>
-        </div>
-        <div class="col-md-6 offset-md-4 position-absolute">
-          <h1>My Projects</h1>
-          <a href="#">Take a Listen →</a>
-        </div>
+    <div class="row d-flex align-items-center no-gutters">
+      <h3 class="section-num text-muted position-absolute">03</h3>
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="600">
+        <img class="img-fluid" src="img/home05.jpg" data-rellax-speed="1"/>
+      </div>
+      <div class="col-md-4 offset-1" data-aos="fade-up" data-aos-duration="600">
+        <h1>Projects</h1>
+        <h3 class="mb-4">
+          A producer, DJ and curator, London-based South African Esa Williams is a true musical polymath.
+        </h3>
+        <a href="#">Take a Listen →</a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer page-section bg-dark">
-    <div class="container py-5">
-      <div class="row align-items-center">
-        <div class="col-md-12">
-          <p class="text-white">
-            Continue the Journey...
-          </p>
-          <h3 class="text-white py-2">
-            info@esawilliams.com
-          </h3>
-        </div>
+  <!-- Bookings -->
+  <section class="pt-0" id="bookings">
+    <div class="row no-gutters pb-5">
+      <div class="col-md-1 d-flex align-items-center justify-content-center">
+        <h3 class="section-num text-muted">04</h3>
       </div>
-      <div class="row align-items-center">
-        <div class="col-md-12">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">instagram</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">facebook</a>
-            </li>
-          </ul>
+      <div class="col-md-10" data-aos="fade-up" data-aos-duration="600">
+        <div class="row">
+          <img class="img-fluid" src="img/home06.jpg" data-rellax-speed="1"/>
         </div>
       </div>
     </div>
-  </footer>
-
-  <!-- Portfolio Modals -->
-
-  <!-- Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="row no-gutters pt-5">
+      <div class="col-md-12 text-center" data-aos="fade-down" data-aos-duration="600">
+        <h1>Bookings</h1>
+        <h3 class="mb-4">
+          Continue the joutney...
+        </h3>
+        <a href="#">Book me →</a>
       </div>
     </div>
-  </div>
-
-  <!-- Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Finish</li>
-                  <li>Category: Identity</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -359,24 +165,12 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  
-  <script src="js/contact_me.js"></script>
-
   <!-- Custom scripts for this template -->
   <script src="js/agency.js"></script>
-  <script src="js/rellax.min.js"></script>
+  <script src="js/aos.js"></script>
   <script>
-    var rellax = new Rellax('.rellax', {
-      // center: true
-      callback: function(position) {
-          // callback every position change
-          console.log(position);
-      }
-    });
+    AOS.init();
   </script>
-
 </body>
 
 </html>

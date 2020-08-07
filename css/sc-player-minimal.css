@@ -1,0 +1,193 @@
+.sc-player{
+    width: 100%;
+    font-family: 'GT Walsheim Pro Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    height: auto;
+    position: relative;
+    margin-bottom: 3.5%;
+    font-size: 1rem;
+    line-height: 1;
+    color: #010101;
+  }
+  
+  .sc-player ol, .sc-player li{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+  }
+  
+  /* controls */
+  
+  .sc-player .sc-controls{
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    opacity: 0;
+    background: rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+  }
+  .sc-player .sc-controls:hover{
+    opacity: 1;
+  }
+  
+  .sc-player .sc-controls a{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #010101;
+    color: transparent;
+    -webkit-text-stroke: 2px #010101;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .sc-player .sc-controls a i{
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .sc-player .sc-controls a.sc-pause{
+    display: none;
+  }
+  
+  .sc-player.playing .sc-controls a.sc-play{
+    display: none;
+  }
+  
+  .sc-player.playing .sc-controls a.sc-pause{
+    display: flex;
+  }
+  
+  /* scrubber */
+  
+  .sc-scrubber-box {
+    position: fixed;
+    width: 88.666667%;
+    z-index: 1;
+    background-color: #fff;
+  }
+  .sc-scrubber {
+    height: 2px;
+    margin: calc(4% + 4px) 0;
+  }
+  
+  .sc-scrubber .sc-time-span{
+    height: 100%;
+    position: relative;
+    background-color: #e1e1e1;
+  }
+  .sc-scrubber .sc-time-span img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  
+  .sc-scrubber .sc-buffer, .sc-scrubber .sc-played{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 0;
+    -webkit-transition: width 0.1s ease;
+    cursor: pointer;
+  }
+  .sc-scrubber .sc-buffer {
+    background-color:  #c1c1c1;
+    opacity: 1;
+  }
+  
+  .sc-scrubber .sc-played {
+    background-color: #010101;
+    opacity: 1;
+  }
+  
+  .sc-scrubber .sc-time-indicators{
+    position: absolute;
+    right: 0;
+    color: #010101;
+    font-size: 0.5rem;
+    line-height: 1;
+    padding-top: 5px;
+  }
+  
+  /* tracks */
+  
+  /* Track listings*/
+  
+  .sc-player ol.sc-trackslist{
+    width: 100%;
+    display: inline-block;
+    margin-top: 9%;
+  }
+  
+  .sc-player ol.sc-trackslist li{
+    float: left;
+    width: 100%;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sc-player ol.sc-trackslist li a{
+    color: #010101;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+  .sc-player ol.sc-trackslist li.active a, .sc-player ol.sc-trackslist li:hover a {
+    text-decoration: none;
+    color: #c1c1c1;
+  }
+  .sc-player ol.sc-trackslist .sc-track-duration{
+      display: none;
+  }
+  
+  /* Track info*/
+  
+  .sc-player .sc-info{
+
+  }
+  
+  .sc-player .sc-info.active{
+    left: 25%;
+    top: 5%;
+  }
+  
+  
+  .sc-player .sc-info-toggle{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: none;
+  }
+  
+  .sc-player .sc-info-toggle.active{
+    left: -5000px;
+  }
+  
+  .sc-player .sc-info-close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  /* utilities */
+  
+  .sc-player .hidden {
+    display: none;
+  }
+  
+  .sc-player-engine-container{
+    width: 1px;
+    height: 1px;
+    position: fixed;
+    top: 2px;
+    left: 2px;
+  }
+  

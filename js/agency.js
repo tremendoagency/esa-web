@@ -23,6 +23,29 @@
   $('.navbar-toggler').click(function() {
     $('.mobile-navbar').toggleClass('show');
     $('.navbar-toggler').toggleClass('open');
+    $('#player').removeClass('show');
+    $('body').removeClass('static');
+  });
+
+  $('.player-toggler').click(function() {
+    $('#player').toggleClass('show');
+    $('.mobile-navbar').removeClass('show');
+    $('.navbar-toggler').removeClass('open');
+    $('body').toggleClass('static');
+  });
+
+  $('.sc-remote-link').click(function(event) {
+    var $link = $(this),
+    $player = $('.sc-player');
+    if ($player.hasClass('playing')) {
+      $('a.sc-pause').click();
+      $link.removeClass('fa-pause').addClass('fa-play');
+    }
+    else{
+      $('a.sc-play').click();
+      $link.removeClass('fa-play').addClass('fa-pause');
+    }
+    return false;
   });
 
   // Activate scrollspy to add active class to navbar items on scroll

@@ -20,7 +20,7 @@
   .sc-player .sc-controls{
     position: absolute;
     top: 0;
-    display: flex;
+    display: none;
     width: 100%;
     justify-content: center;
     height: 100%;
@@ -30,7 +30,6 @@
     transition: 0.3s ease;
   }
   .sc-player .sc-controls:hover{
-    opacity: 1;
   }
   
   .sc-player .sc-controls a{

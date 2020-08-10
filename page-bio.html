@@ -16,6 +16,7 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
   <link href="css/aos.css" rel="stylesheet">
+  <link href="css/swiper.min.css" rel="stylesheet">
   <link href="css/fontawesome/css/all.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/sc-player-minimal.css" />
 
@@ -107,7 +108,24 @@
     <div class="row no-gutters pb-5">
       <div class="col-md-10 offset-md-1" data-aos="fade-up" data-aos-duration="1000">
         <div class="row d-flex align-items-center">
-          <img class="w-100" src="img/video.jpg" data-rellax-speed="1"/>
+          <div class="swiper-container" id="bio-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="w-100" src="img/video.jpg" data-rellax-speed="1"/>
+              </div>
+              <div class="swiper-slide">
+                <img class="w-100" src="img/video.jpg" data-rellax-speed="1"/>
+              </div>
+              <div class="swiper-slide">
+                <img class="w-100" src="img/video.jpg" data-rellax-speed="1"/>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -128,6 +146,7 @@
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/swiper.min.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.js"></script>
